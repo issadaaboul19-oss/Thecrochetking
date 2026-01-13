@@ -107,36 +107,43 @@
 <section>
   <h2>Royal Creations</h2>
   <div class="gallery">
-   <!-- Clickable Crochet Card -->
-<a href="Crochet.html" style="text-decoration: none;">
-  <div class="card">
-    <img src="images/Crochetbutton.jpg" alt="Crochet" class="card-img">
+ <!-- Clickable Crochet Card -->
+<div class="card-container">
+  <a href="beanies.html" class="card-link">
+    <img src="images/beaniesbutton.jpg" alt="Crochet" class="card-img">
     <p class="card-title">Crochet</p>
-  </div>
-</a>
+  </a>
+</div>
 
 <style>
-/* Card container */
-.card {
-  border: 2px solid #b8860b; /* golden king theme border */
-  border-radius: 12px;
-  padding: 10px;
+/* Card container to center */
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Make the whole card clickable */
+.card-link {
+  display: block;
   width: 400px;
-  margin: 20px auto;
   text-align: center;
-  cursor: pointer;
-  background-color: #fff8dc; /* soft cream background */
+  text-decoration: none; /* remove underline */
+  border: 2px solid #b8860b;
+  border-radius: 12px;
+  background-color: #fff8dc;
+  padding: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 /* Hover effect */
-.card:hover {
+.card-link:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }
 
-/* Card image */
+/* Image inside card */
 .card-img {
   width: 100%;
   border-radius: 10px;
@@ -144,12 +151,13 @@
 
 /* Card title */
 .card-title {
+  margin-top: 10px;
   font-size: 1.5em;
   font-weight: bold;
-  color: #b8860b; /* golden king color */
-  margin-top: 10px;
+  color: #b8860b;
 }
 </style>
+
 
     <div class="card">
       <img src="https://via.placeholder.com/400">
