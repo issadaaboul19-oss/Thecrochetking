@@ -19,9 +19,52 @@
   </section>
 </body>
 </html>
-<a href="crochet.html">
-  <div class="card">
-    <img src="images/beaniesbutton.jpg" alt="Crochet">
-    <p>Crochet</p>
-  </div>
-</a>
+<div class="card-container">
+  <a href="beanies.html" class="card-link">
+    <img src="images/beaniesbutton.jpg" alt="Crochet" class="card-img">
+    <p class="card-title">Crochet</p>
+  </a>
+</div>
+
+<style>
+/* Card container to center */
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Make the whole card clickable */
+.card-link {
+  display: block;
+  width: 400px;
+  text-align: center;
+  text-decoration: none; /* remove underline */
+  border: 2px solid #b8860b;
+  border-radius: 12px;
+  background-color: #fff8dc;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+.card-link:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* Image inside card */
+.card-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Card title */
+.card-title {
+  margin-top: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #b8860b;
+}
+</style>
