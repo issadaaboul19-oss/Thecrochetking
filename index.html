@@ -107,10 +107,50 @@
 <section>
   <h2>Royal Creations</h2>
   <div class="gallery">
-    <div class="card">
-      <img src="https://via.placeholder.com/400">
-      <p>Plush Crochet</p>
-    </div>
+   <!-- Clickable Crochet Card -->
+<a href="Crochet.html" style="text-decoration: none;">
+  <div class="card">
+    <img src="images/Crochetbutton.jpg" alt="Crochet" class="card-img">
+    <p class="card-title">Crochet</p>
+  </div>
+</a>
+
+<style>
+/* Card container */
+.card {
+  border: 2px solid #b8860b; /* golden king theme border */
+  border-radius: 12px;
+  padding: 10px;
+  width: 400px;
+  margin: 20px auto;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fff8dc; /* soft cream background */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+/* Card image */
+.card-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Card title */
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #b8860b; /* golden king color */
+  margin-top: 10px;
+}
+</style>
+
     <div class="card">
       <img src="https://via.placeholder.com/400">
       <p>Hats & Beanies</p>
